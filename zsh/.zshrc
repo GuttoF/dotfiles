@@ -9,6 +9,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/aliases
 source ~/.config/zsh/credentials
 
+
+eval "$(ssh-agent -s)"
 eval "$(starship init zsh)"
 eval "$(zellij setup --generate-auto-start zsh)"
 eval "$(/opt/homebrew/bin/mise activate zsh)"
