@@ -1,0 +1,35 @@
+term = xterm-256color
+theme = dark:tokyonight_night,light:tokyonight_moon
+font-family = "CaskaydiaMono Nerd Font"
+font-thicken = true
+font-size = 16
+
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = block
+adjust-cell-height = 35%
+
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+confirm-close-surface = false
+
+window-padding-balance = true
+window-save-state = always
+window-decoration = false
+macos-titlebar-style = hidden
+quick-terminal-animation-duration = 0.08
+macos-icon = official
+background-opacity = 0.99
+background-blur-radius = 10
+
+macos-option-as-alt = true
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+keybind = cmd+t=unbind
+keybind = cmd+n=unbind
+keybind = cmd+c=unbind
+keybind = cmd+w=unbind
+keybind = cmd+opt+left=unbind
+keybind = cmd+opt+right=unbind
+
+quit-after-last-window-closed=true

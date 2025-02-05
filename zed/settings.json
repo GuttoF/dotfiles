@@ -1,0 +1,111 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "show_inline_completions": false,
+  "telemetry": {
+    "metrics": false
+  },
+  "buffer_font_family": "CaskaydiaMono Nerd Font",
+  "ui_font_family": "CaskaydiaMono Nerd Font",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "autosave": "on_focus_change",
+  "theme": {
+    "mode": "system",
+    "light": "Tokyo Night",
+    "dark": "One Dark"
+  },
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "language_servers": ["pyright", "ruff"],
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "show_completion_documentation": true,
+      "show_completion_snippets": true,
+      "show_completion_detail": true,
+      "show_completion_type": true,
+      "show_completion_insertion": true,
+      "show_completion_filter": true,
+      "show_completion_sort": true,
+      "show_completion_auto": true,
+      "analysis": {
+        "enabled": true,
+        "linting": true,
+        "typechecking": true
+      }
+    },
+    "Rust": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "show_completion_documentation": true,
+      "show_completion_snippets": true,
+      "show_completion_detail": true,
+      "show_completion_type": true,
+      "show_completion_insertion": true,
+      "show_completion_filter": true,
+      "show_completion_sort": true,
+      "show_completion_auto": true
+    },
+    "Go": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "show_completion_documentation": true,
+      "show_completion_snippets": true,
+      "show_completion_detail": true,
+      "show_completion_type": true,
+      "show_completion_insertion": true,
+      "show_completion_filter": true,
+      "show_completion_sort": true,
+      "show_completion_auto": true,
+      "inlayHints": {
+        "parameterNames": "all",
+        "variableTypes": true,
+        "functionReturnTypes": true
+      }
+    },
+    "Go Mod": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "show_completion_documentation": true,
+      "show_completion_snippets": true,
+      "show_completion_detail": true,
+      "show_completion_type": true,
+      "show_completion_insertion": true,
+      "show_completion_filter": true,
+      "show_completion_sort": true,
+      "show_completion_auto": true
+    },
+    "Go Work": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "show_completion_documentation": true,
+      "show_completion_snippets": true,
+      "show_completion_detail": true,
+      "show_completion_type": true,
+      "show_completion_insertion": true,
+      "show_completion_filter": true,
+      "show_completion_sort": true,
+      "show_completion_auto": true
+    },
+    "Dart": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+      "show_completion_documentation": true,
+      "show_completion_snippets": true,
+      "show_completion_detail": true,
+      "show_completion_type": true,
+      "show_completion_insertion": true,
+      "show_completion_filter": true,
+      "show_completion_sort": true,
+      "show_completion_auto": true
+    }
+  }
+}
