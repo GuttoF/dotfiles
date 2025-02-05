@@ -14,6 +14,7 @@ Welcome to my dotfiles repository! This is a collection of configurations and se
 - **Ghostty**: Terminal emulator configuration for a modern look and feel.
 - **Fastfetch**: System information tool for quick system overviews.
 - **Btop**: Resource monitor with a beautiful and functional interface.
+- **Aerospace**: i3-like tiling window manager.
 
 ### macOS Apps
 - A setup script to install all my essential macOS apps for work and development.
