@@ -1,2 +1,6 @@
 [tools]
-go = "latest"
+go = "1.24.1"
+node = "22.14"
+rust = "stable"
+zig = "latest"
+zls = "latest"

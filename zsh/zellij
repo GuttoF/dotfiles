@@ -1,0 +1,29 @@
+eval "$(zellij setup --generate-auto-start zsh)"
+
+if [[ $- == *i* ]]; then
+    if command -v zellij &>/dev/null; then
+        function zellij_tab_name_update_pre() {
+            if [[ -n "$ZELLIJ" ]]; then
+                local cmd_line=(${(z)1})
+                local process_name=${cmd_line[1]}
+                if [[ -n "$process_name" && "$process_name" != "z" ]]; then
+                    nohup zellij action rename-tab "$process_name" >/dev/null 2>&1
+                fi
+            fi
+        }
+
+        function zellij_tab_name_update_post() {
+            if [[ -n "$ZELLIJ" ]]; then
+                local cmd_line=(${(z)1})
+                local process_name=${cmd_line[1]}
+                if [[ "$process_name" == "z" ]]; then
+                    nohup zellij action rename-tab "$(pwd)" >/dev/null 2>&1
+                fi
+            fi
+        }
+
+        autoload -Uz add-zsh-hook
+        add-zsh-hook preexec zellij_tab_name_update_pre
+        add-zsh-hook precmd zellij_tab_name_update_post
+    fi
+fi
